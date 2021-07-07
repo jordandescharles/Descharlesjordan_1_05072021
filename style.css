@@ -36,7 +36,7 @@ header ul li a:hover{
 #inscription a{
     text-decoration: none;
     color:#0065FC; 
-    font-weight: 600; 
+    font-weight: 800; 
 }
 
 #recherche{
@@ -238,19 +238,16 @@ max-width: 1280px;
     border-radius: 20px;
     min-width:330px;
     margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
     display: flex;
     flex-direction: column;
-   
-    
+  
 }
 
 .populaire > h1 {
-    margin-left: 10px;;
+    margin-left: 10px;
  }
 
 .petit_articlepopulaire{
@@ -307,5 +304,129 @@ max-width: 1280px;
 }
 .textarticlepopulaire i{
     margin-top: 40px;
+
+}
+.activite div{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.activite_un{
+    width: 290px;
+    height: 465px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, .1);
+    margin-right:40px;
+}
+.activite_un img{
+    width: 290px;
+    height: 410px;
+    object-fit: cover;
+    display: block;
+    border-top-left-radius:20px ;
+    border-top-right-radius:20px ;
+} 
+.activite_un h2{
+    margin-left: 15px;
+    margin-top: 16px;
+}
+.activite_deux h2{
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+.activite_deux{
+   
+    display: flex;
+    flex-direction:column ;
+    justify-content: space-between;
+}
+.petitacti{
+    flex-direction: column;
+    width: 290px;
+    height: 195px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, .1);
+}
+.petitacti img{
+    width: 290px;
+    height: 140px;
+    object-fit: cover;
+    display: block;
+    border-top-left-radius:20px ;
+    border-top-right-radius:20px ;
+} 
+.moyenacti{
+    flex-direction: column;
+    width: 290px;
+    height: 225px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, .1);
+}
+.moyenacti img{
+    width: 290px;
+    height: 170px;
+    object-fit: cover;
+    display: block;
+    border-top-left-radius:20px ;
+    border-top-right-radius:20px ;
+} 
+.ligneactifull{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.activite{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+footer{
+    background-color: #f2f2f2;
+    width: 1400px;
+    margin-left: -60px;
+}
+footer div{
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    padding-top:30px ;
+}
+footer ul li:first-child{
+    font-weight: 800;
+    font-size: 1em;
+    line-height: 40px;
+}
+footer ul li{
+    font-size: 0.9em;
+    font-weight: 400;
+    line-height: 26px;
+    list-style:none;
+    text-decoration: none;
+}
+footer ul li a{
+    text-decoration: none;
+    color: black;
+}
+footer ul li a:hover{
+    text-decoration: underline;
+}
+
+
+/* les petits trucs en plus  */
+.petitacti:hover{
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, .4);
+}
+.moyenacti:hover{
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, .4);
+}
+.activite_un:hover{
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, .4);
+}
+.petit_article:hover {
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, .4)
+
+}
+.petit_articlepopulaire:hover {
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, .4)
 
 }
