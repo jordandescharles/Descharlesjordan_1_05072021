@@ -14,12 +14,13 @@
     <header>
         <a href="#"><img src="img/Reservia.svg" alt="Logo Reservia"></a>
         <ul>
-            <li><a href="#">Hébergements</a></li>
-            <li><a href="#">Activités</a></li>
+            <li><a href="#lienhebergement">Hébergements</a></li>
+            <li><a href="#lienactivite">Activités</a></li>
             <li id="inscription"><a href="#">S'inscrire</a></li>
         </ul>
     </header>
-    <section id="recherche"> <!-- section globale  -->
+    <section id="recherche">
+        <!-- section globale  -->
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
         <form action="#" method="get" class="formulaire">
@@ -27,7 +28,8 @@
             <input type="text" value="Marseille, France">
             <button>Rechercher</button>
         </form>
-        <section id="filtres"> <!-- filtres + icones -->
+        <section id="filtres">
+            <!-- filtres + icones -->
             <h2>Filtres</h2>
             <div>
                 <i class="fas fa-money-bill-wave"></i><span>Économique</span>
@@ -44,6 +46,138 @@
         </section>
         <p id="info"><i class="fas fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
     </section>
+    <div id="hebergementetpopulaire">
+        <section class="heberge">
+            <h1>Hébergements à Marseille</h1>
+            <div class="lignehebergement">
+                <!-- ligne 1 -->
+                <article class="petit_article">
+                    <!-- article 1 -->
+                    <img src="img/hebergement/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière">
+                    <div class="textarticle">
+                        <h2>Auberge la Cannebière</h2>
+                        <p> Nuit à partir de <strong>25€</strong> </p>
+                        <!-- 5 etoiles bleues par défaut on utilise des class pour gérer les autres -->
+                        <span class="quatresetoiles">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </span>
+                    </div>
+                </article>
+                <article class="petit_article">
+                    <!-- article 2 -->
+                    <img src="img/hebergement/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port">
+                    <div class="textarticle">
+                        <h2>Hôtel du port</h2>
+                        <p> Nuit à partir de <strong>52€</strong> </p>
+                        <span>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </span>
+                    </div>
+                </article>
+                <article class="petit_article">
+                    <!-- article 3 -->
+                    <img src="img/hebergement/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel les mouettese">
+                    <div class="textarticle">
+                        <h2>Hôtel les mouettes</h2>
+                        <p> Nuit à partir de <strong>76€</strong> </p>
+                        <span class="quatresetoiles">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </span>
+                    </div>
+                </article>
+            </div>
+            <div class="lignehebergement">
+                <!-- ligne 2 -->
+                <article class="petit_article">
+                    <!-- article 4 -->
+                    <img src="img/hebergement/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer">
+                    <div class="textarticle">
+                        <h2>Hôtel de la mer</h2>
+                        <p> Nuit à partir de <strong>46€</strong> </p>
+                        <span class="troisetoiles">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </span>
+                    </div>
+                </article>
+                <article class="petit_article">
+                    <!-- article 5 -->
+                    <img src="img/hebergement/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge le Panier">
+                    <div class="textarticle">
+                        <h2>Auberge le Panier</h2>
+                        <p> Nuit à partir de <strong>23€</strong> </p>
+                        <span class="quatresetoiles">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </span>
+                    </div>
+                </article>
+                <article class="petit_article">
+                    <!-- article 6 -->
+                    <img src="img/hebergement/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina">
+                    <div class="textarticle">
+                        <h2>Hôtel chez Amina</h2>
+                        <p> Nuit à partir de <strong>96€</strong> </p>
+                        <span>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </span>
+                    </div>
+                </article>
+            </div>
+            <h2> <a href="#">Afficher plus</a> </h2>
+        </section>
+        <!-- LES PLUS POPULAIRES -->
+        <section class="populaire" >
+            <div id="titrepopulaire">
+                <h1>Les plus populaires</h1> <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="lignepopulaire">
+                <!-- ligne 1 -->
+                <article class="petit_articlepopulaire">
+                    <!-- article 1 -->
+                    <img src="img/hebergement/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin">
+                    <div class="textarticlepopulaire">
+                        <h2>Hôtel Le soleil du matin</h2>
+                        <p> Nuit à partir de <strong>128€</strong> </p>
+                        <!-- 5 etoiles bleues par défaut on utilise des class pour gérer les autres -->
+                        <span>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </span>
+                    </div>
+                </article>
+                <article class="petit_articlepopulaire">
+                    <!-- article 2 -->
+                    <img src="img/hebergement/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                        alt="Au coeur de l'eau Chambres d'hôtes">
+                    <div class="textarticlepopulaire">
+                        <h2>Au coeur de l'eau Chambres d'hôtes</h2>
+                        <p> Nuit à partir de <strong>71€</strong> </p>
+                        <span class="quatresetoiles">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </span>
+                    </div>
+                </article>
+                <article class="petit_articlepopulaire">
+                    <!-- article 3 -->
+                    <img src="img/hebergement//febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Auberge la Cannebière">
+                    <div class="textarticlepopulaire">
+                        <h2>Hôtel Tout bleu et Blanc</h2>
+                        <p> Nuit à partir de <strong>68€</strong> </p>
+                        <span class="quatresetoiles">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </span>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </div>
 </body>
 
 </html>
