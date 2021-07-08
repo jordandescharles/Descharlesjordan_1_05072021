@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;800&display=swap');
 
+  #menumobile{
+      display:none;
+    }
+    #champrecherchemobile{
+        display: none;
+    }
+
 *{
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
@@ -10,30 +17,30 @@ body{
     padding-top: 30px;
 }
 
-header{
+#menudesktop{
     display: flex;
     justify-content: space-between;
 }
 
-header ul{
+#menudesktop ul{
     display: flex;
     list-style-type: none;
     
 }
 
-header ul li a{
+#menudesktop ul li a{
     text-decoration: none;
     color: rgb(22, 22, 22);
     padding:30px 25px 0 25px;  
     font-size:0.9em ;  
 }
-header ul li a:hover{
+#menudesktop ul li a:hover{
     text-decoration: none;
     color:#0065FC;  
     border-top: #0065FC 1px solid ;   
 }
 
-#inscription a{
+#menudesktop #inscription a{
     text-decoration: none;
     color:#0065FC; 
     font-weight: 800; 
@@ -50,6 +57,17 @@ h1{
 }
 
 #mapin{
+    display: inline-block;
+    background-color: #F2F2F2;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: none;
+    height: 49px;
+    width: 50px; 
+    text-align:center;
+    line-height: 50px;
+}
+#mapinmobile{
     display: inline-block;
     background-color: #F2F2F2;
     border-top-left-radius: 15px;
@@ -124,7 +142,7 @@ h2 a:hover{
 
  #filtres div span{
     display: inline-block;
-    font-weight: 800;
+    font-weight: 600;
     border: #F2F2F2 3px solid;
     border-radius: 50px;
     z-index: 1;
@@ -142,14 +160,18 @@ h2 a:hover{
     color: white;
     border: #0065FC 3px solid;
 }
+#recherche #ligneinfo{
+    display: flex;
+}
 
-#recherche p i {
+ #ligneinfo i{
     width: 20px;
     height: 20px;
     border: #F2F2F2 1px solid;
     border-radius: 50px;
     font-size: 0.7em;
     margin-right:10px ;
+    margin-top: 38px;
     text-align: center;
     color: #0065FC;
     line-height: 20px;
@@ -158,6 +180,7 @@ h2 a:hover{
   #info{
       margin-top: 40px;
   }
+  /* ------------------------------------------------- hebergement -------------------------------- */
 .heberge{
     background-color: #F2F2F2;
     border-radius: 20px;
@@ -229,10 +252,11 @@ h2 a:hover{
 #hebergementetpopulaire{
 max-width: 1280px;
   display: flex;
+  flex-direction: row-reverse;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
+/* ------------------------------------------------- populaire -------------------------------- */
 .populaire{
     background-color: #F2F2F2;
     border-radius: 20px;
@@ -242,8 +266,7 @@ max-width: 1280px;
     padding-right: 20px;
     padding-top: 20px;
     display: flex;
-    flex-direction: column;
-  
+    flex-direction: column; 
 }
 
 .populaire > h1 {
@@ -306,6 +329,7 @@ max-width: 1280px;
     margin-top: 40px;
 
 }
+/* ------------------------------------------------- activite  -------------------------------- */
 .activite div{
     display: flex;
     justify-content: space-between;
@@ -430,3 +454,195 @@ footer ul li a:hover{
     box-shadow: 0px 0px 8px rgba(0, 0, 0, .4)
 
 }
+
+@media (min-width: 375px) and (max-width: 480px ) { /* --------  CSS POUR MOBILES  ---------------------*/
+
+    #menudesktop {
+      display: none;
+
+    }
+    #menumobile{
+        display:initial;
+      }
+      #menumobile span{
+        display:flex;
+        justify-content: space-between;
+        padding: 0 30px 0 30px;
+        line-height: 50px;
+      }
+      #menumobile span a{
+        color: #0065FC;
+        text-decoration: none;
+        font-size: 1em;
+        font-weight: 800;
+      }
+      #menumobile span a:hover{
+        text-decoration: underline;
+      }
+      #menumobile ul{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        padding: 0;
+        
+      }
+      #menumobile ul li {
+        text-align: center;
+        padding-bottom: 20px ;
+        border-bottom:#F2F2F2 3px solid ;
+        min-width: 190px;
+        max-width: 240px;
+        
+      }
+      #menumobile ul li:hover {
+        border-bottom:#0065FC 3px solid ;
+      }
+      #menumobile ul li:active {
+        border-bottom:#0065FC 3px solid ;
+      }
+      #menumobile ul li a{
+        text-decoration: none;
+        color: black;  
+         
+      }
+      #menumobile ul li:hover a{
+        color: #0065FC;    
+      }
+      #menumobile ul li a:active{
+        color: #0065FC;    
+      }
+      #recherche{
+          padding: 0 20px 0 20px;
+          text-align: left;
+          font-size: 1.2em;
+      }
+      #recherche p{
+          font-size: 0.9em;
+          padding: 0;
+          margin: 0;
+      }
+      #recherche h1{
+        font-size: 1.2em;
+    }
+      #champrecherchedesktop{
+        display: none;
+    }
+    #champrecherchemobile{
+        display:initial;
+    }
+    #champrecherchemobile form{
+        display: flex;
+        justify-content:center;
+        margin-top: 30px;
+    }
+     
+#loupe{
+    display: inline-block;
+    background-color: #0065FC;
+    border-radius: 15px;
+    margin-left: -10px;
+    color: white;
+    border: none;
+    height: 49px;
+    width: 50px; 
+    text-align:center;
+    line-height: 50px;
+}
+#filtres h2{
+    padding-right: 200px;
+}
+#filtres div span{
+    font-weight: 600;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+#ligneinfo i{
+    margin-top: 0px;
+    padding: 0;
+  }
+  #ligneinfo {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  #ligneinfo p{
+      margin-top: 0px;
+    width: 300px;
+  }
+/* ------------------------------------------------- populaire mobile -------------------------------------- */
+  .populaire{
+    min-width: 375px;
+    border-radius: 0px;
+    margin-top: 30px;
+    padding:0; 
+}
+.lignepopulaire{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lignehebergement{
+    margin-bottom: 0px;
+}
+.petit_articlepopulaire{
+    margin-bottom: 20px ;
+    width: 310px;
+    height: 120px;
+
+}
+.petit_articlepopulaire img{
+    width: 120px;
+    height: 120px;
+}
+.textarticlepopulaire i{
+    margin-top: 20px;
+}
+
+    
+
+#titrepopulaire{
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.heberge{
+    border-radius: 0px;
+    background-color: white;
+}
+
+.heberge h1{
+   margin-left: 6px;
+}
+
+.heberge > h2 {
+    margin-left: 10px;
+ }
+
+.petit_article {
+    width: 300px;
+    height: 200px;
+    margin:0px 10px 20px 10px;
+    background-color: white;
+    border-radius: 20px;
+    border: white 5px solid;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, .1)
+
+}
+.petit_article img{
+    width: 300px;
+    height: 110px;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-top-left-radius:18px ;
+    border-top-right-radius:18px ;
+    
+  }
+
+
+
+
+
+
+  }
