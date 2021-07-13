@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;800&display=swap");
-strong { font-weight: 600; }
+strong {
+  font-weight: 600;
+}
 #menumobile {
   display: none;
 }
@@ -123,7 +125,7 @@ h2 a:hover {
   margin-top: 20px;
   max-width: 800px;
 }
-#filtres  .fas {
+#filtres .fas {
   background-color: #deebff;
   color: #0065fc;
   border-radius: 50px;
@@ -133,10 +135,10 @@ h2 a:hover {
   text-align: center;
   z-index: 900;
   margin-left: 00px;
-  transform: translate(-10px,-3px);
+  transform: translate(-10px, -3px);
 }
 #filtres span {
-  display:flex;
+  display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   font-weight: 600;
@@ -144,21 +146,20 @@ h2 a:hover {
   border-radius: 50px;
   z-index: 1;
   height: 37px;
-  margin-bottom: 20px ;
+  margin-bottom: 20px;
   margin-right: 10px;
   line-height: 36px;
   font-size: 0.9em;
   padding-right: 15px;
   margin-right: 15px;
-  
 }
-#filtres  {
+#filtres {
   display: flex;
 }
-#filtres h2  {
+#filtres h2 {
   margin-right: 20px;
 }
-#filtres  span:hover {
+#filtres span:hover {
   background-color: #0065fc;
   color: white;
   border: #0065fc 3px solid;
@@ -809,8 +810,43 @@ footer ul li a:hover {
     display: flex;
     flex-wrap: wrap;
   }
+  #recherche h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  #lienhebergement {
+    text-align: center;
+  }
+  .heberge h2:last-child {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  #recherche p {
+    text-align: center;
+  }
   #ligneactifull div {
     margin-right: 10px;
+  }
+  #filtres {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+  #ligneinfo {
+    justify-content: center;
+  }
+  #titrepopulaire {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  form {
+    margin: 0;
+    justify-content: center;
   }
   #ligneactifull > div {
     justify-content: center;
@@ -845,7 +881,10 @@ footer ul li a:hover {
     margin-top: 16px;
   }
   .activite h1 {
-    padding-left: 50px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
   }
   .petitacti {
     width: 270px;
@@ -873,16 +912,26 @@ footer ul li a:hover {
   footer div {
     padding-top: 10px;
     display: block;
-    margin-left: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   }
   footer div ul li {
     width: 220px;
     padding: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
   footer div ul li:first-child {
     padding-top: 10px;
   }
   footer {
     padding-bottom: 20px;
+  }
+  footer div ul {
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
