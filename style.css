@@ -13,21 +13,31 @@ strong {
   font-weight: 400;
 }
 html {
+  width: 100%;
+  max-width: 1680px;
   margin-left: auto;
   margin-right: auto;
 }
 body {
-  margin: 0;
   padding-top: 30px;
 }
-body > * {
-  max-width: 1280px;
+header {
+  width: 94%;
   margin-left: auto;
   margin-right: auto;
 }
-
+#recherche {
+  width: 94%;
+  margin-left: auto;
+  margin-right: auto;
+}
+main {
+  width: 94%;
+  margin-left: auto;
+  margin-right: auto;
+}
 #menudesktop {
-  max-width: 1280px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -52,11 +62,10 @@ body > * {
   font-weight: 800;
 }
 #recherche {
-  max-width: 1280px;
   margin-top: 40px;
 }
 h1 {
-  font-size: 1.4em;
+  font-size: 1.3em;
   font-weight: 800;
 }
 #mapin {
@@ -65,7 +74,7 @@ h1 {
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   border: none;
-  height: 49px;
+  height: 50px;
   width: 50px;
   text-align: center;
   line-height: 50px;
@@ -88,6 +97,7 @@ h1 {
   font-size: 1em;
   padding-left: 15px;
   height: 45px;
+  cursor: pointer;
 }
 #recherche button {
   background-color: #0065fc;
@@ -99,9 +109,11 @@ h1 {
   border: none;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+  cursor: pointer;
 }
 form {
   display: flex;
+  
 }
 h2 {
   font-weight: 800;
@@ -123,7 +135,8 @@ h2 a:hover {
   font-weight: 800;
   font-size: 1em;
   margin-top: 20px;
-  max-width: 800px;
+  max-width: 70%;
+  margin-bottom: 20px;
 }
 #filtres .fas {
   background-color: #deebff;
@@ -134,27 +147,18 @@ h2 a:hover {
   line-height: 45px;
   text-align: center;
   z-index: 900;
-  margin-left: 00px;
-  transform: translate(-10px, -3px);
+  transform: translate(-10px, -2px);
 }
 #filtres span {
+  z-index: 1;
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
   font-weight: 600;
   border: #f2f2f2 3px solid;
   border-radius: 50px;
-  z-index: 1;
-  height: 37px;
-  margin-bottom: 20px;
-  margin-right: 10px;
-  line-height: 36px;
-  font-size: 0.9em;
+  height: 40px;
+  line-height: 40px;
   padding-right: 15px;
   margin-right: 15px;
-}
-#filtres {
-  display: flex;
 }
 #filtres h2 {
   margin-right: 20px;
@@ -170,47 +174,58 @@ h2 a:hover {
 #ligneinfo i {
   width: 20px;
   height: 20px;
+  line-height: 20px;
   border: #f2f2f2 1px solid;
   border-radius: 50px;
   font-size: 0.7em;
   margin-right: 10px;
-  margin-top: 38px;
+  margin-top: 15px;
   text-align: center;
   color: #0065fc;
-  line-height: 20px;
 }
-#info {
-  margin-top: 40px;
-}
+
 /* ------------------------------------------------- hebergement -------------------------------- */
 .heberge {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   background-color: #f2f2f2;
   border-radius: 20px;
-  max-width: 800px;
+  width: 60%;
+  padding: 40px;
   margin-top: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-right: auto;
+}
+.heberge a {
+ text-decoration: none;
+ color: black;
 }
 .heberge h1 {
-  margin-left: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 0;
 }
-.heberge > h2 {
-  margin-left: 10px;
+.heberge h2 {
+  width: 100%;
+  line-height: 14px;
+  margin: 0;
+  padding: 0;
+}
+.petit_article h2 {
+  width: 100%;
+  margin-top: 10px;
+  padding: 0;
 }
 .petit_article {
-  width: 230px;
-  height: 200px;
-  margin: 0px 10px 0 10px;
+  width: 29%;
+  height: 190px;
+  margin-bottom: 4%;
   background-color: white;
   border-radius: 20px;
   border: white 5px solid;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
 }
 .petit_article img {
-  width: 230px;
+  width: 100%;
   height: 110px;
   object-fit: cover;
   display: block;
@@ -220,7 +235,6 @@ h2 a:hover {
   border-top-right-radius: 18px;
 }
 .petit_article p {
-  font-size: 0.9em;
   line-height: 0px;
 }
 .textarticle {
@@ -239,14 +253,8 @@ h2 a:hover {
 .troisetoiles i:nth-child(5) {
   color: #f2f2f2;
 }
-.lignehebergement {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 30px;
-}
 #hebergementetpopulaire {
-  max-width: 1280px;
+  width: 100%;
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
@@ -254,38 +262,46 @@ h2 a:hover {
 }
 /* ------------------------------------------------- populaire -------------------------------- */
 .populaire {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: #f2f2f2;
   border-radius: 20px;
-  min-width: 330px;
+  width: 25%;
+  padding: 40px;
   margin-top: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
-  display: flex;
-  flex-direction: column;
 }
-.populaire > h1 {
-  margin-left: 10px;
+.populaire a {
+  text-decoration: none;
+  color: black;
+}
+#titrepopulaire {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+#titrepopulaire i {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 1.3em;
 }
 .petit_articlepopulaire {
   display: flex;
   flex-direction: row;
-  width: 340px;
+  width: 100%;
   height: 140px;
-  margin: 0px 10px 30px 10px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: white;
   border-radius: 20px;
   border: white 5px solid;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
 }
-.lignepopulaire {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
 .petit_articlepopulaire img {
-  width: 140px;
-  height: 140px;
+  width: 130px;
+  height: 100%;
   object-fit: cover;
   display: block;
   border-top-left-radius: 18px;
@@ -295,44 +311,44 @@ h2 a:hover {
   font-size: 0.9em;
   line-height: 0px;
 }
+.textarticlepopulaire {
+  width: 50%;
+  margin-left: 6%;
+}
 .textarticlepopulaire i {
   color: #0065fc;
   font-size: 0.8em;
-}
-.textarticlepopulaire {
-  margin-left: 20px;
-  max-width: 150px;
-}
-#titrepopulaire {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 10px 0 10px;
-}
-#titrepopulaire i {
-  line-height: 60px;
-  font-size: 1.3em;
-}
-.textarticlepopulaire i {
   margin-top: 40px;
 }
+.populaire h1 {
+  margin-bottom: 0px;
+  margin-top: 0;
+}
 /* ------------------------------------------------- activite  -------------------------------- */
-.activite div {
+.activite {
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 60px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
+.activite a {
+ text-decoration: none;
+ color: black;
+}
+.activite h1 {
+  width: 100%;
+}
 .activite_un {
-  width: 290px;
-  height: 465px;
+  width: 23%;
+  height: 450px;
   border-radius: 20px;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
-  margin-right: 40px;
-}
-#ligneactifull div {
-  margin-right: 20px;
 }
 .activite_un img {
-  width: 290px;
-  height: 410px;
+  width: 100%;
+  height: 400px;
   object-fit: cover;
   display: block;
   border-top-left-radius: 20px;
@@ -344,59 +360,46 @@ h2 a:hover {
 }
 .activite_deux h2 {
   margin-left: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 .activite_deux {
   display: flex;
+  width: 23%;
   flex-direction: column;
   justify-content: space-between;
+}
+.activite_deux > div {
+  flex-direction: column;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+}
+.activite_deux > div img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 .petitacti {
-  flex-direction: column;
-  width: 290px;
-  height: 195px;
-  border-radius: 20px;
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
-}
-.petitacti img {
-  width: 290px;
-  height: 140px;
-  object-fit: cover;
-  display: block;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  width: 100%;
 }
 .moyenacti {
-  flex-direction: column;
-  width: 290px;
   height: 225px;
-  border-radius: 20px;
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+}
+.petitacti img {
+  height: 140px;
+  padding-bottom: 3px; /* images alignées pixel perfect */
 }
 .moyenacti img {
-  width: 290px;
-  height: 170px;
-  object-fit: cover;
-  display: block;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-}
-.ligneactifull {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.activite {
-  max-width: 1280px;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  height: 175px;
 }
 footer {
   background-color: #f2f2f2;
-  max-width: 3000px;
+  width: 100%;
 }
 footer div {
-  max-width: 1280px;
+  width: 94%;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -404,7 +407,7 @@ footer div {
   padding-top: 30px;
 }
 footer div ul {
-  margin-right: 200px;
+  margin-right: 250px;
   padding-left: 0;
 }
 footer ul li:first-child {
@@ -448,7 +451,11 @@ footer ul li a:hover {
   body {
     margin: 0;
   }
-
+  header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
   #menudesktop {
     display: none;
   }
@@ -471,7 +478,7 @@ footer ul li a:hover {
     text-decoration: underline;
   }
   #menumobile ul {
-    max-width: 375px;
+    width: 100%;
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -480,9 +487,10 @@ footer ul li a:hover {
   }
   #menumobile ul li {
     text-align: center;
+    width: 50%;
     padding-bottom: 20px;
     border-bottom: #f2f2f2 3px solid;
-    min-width: 187px;
+
     margin-left: auto;
     margin-right: auto;
   }
@@ -503,17 +511,12 @@ footer ul li a:hover {
     color: #0065fc;
   }
   #recherche {
-    padding: 0 20px 0 20px;
-    text-align: left;
-    font-size: 1.2em;
-  }
-  #recherche p {
-    font-size: 0.9em;
-    padding: 0;
-    margin: 0;
+    width: 86%;
+    margin-left: auto;
+    margin-right: auto;
   }
   #recherche h1 {
-    font-size: 1.2em;
+    font-size: 1.4em;
   }
   #champrecherchedesktop {
     display: none;
@@ -541,9 +544,12 @@ footer ul li a:hover {
   #filtres h2 {
     padding-right: 280px;
   }
-  #filtres div span {
-    font-weight: 600;
-    font-size: 0.9em;
+  #filtres {
+    max-width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #filtres span {
     margin-bottom: 10px;
   }
   #ligneinfo i {
@@ -556,35 +562,24 @@ footer ul li a:hover {
   }
   #ligneinfo p {
     margin-top: 0px;
-    min-width: 300px;
   }
   /* ------------------------------------------------- populaire mobile -------------------------------------- */
+  main {
+    width: 100%;
+  }
   .populaire {
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     border-radius: 0px;
+    margin-top: 0;
     padding: 0;
-    margin: 0;
-    margin-top: 30px;
-    padding-bottom: 20px;
+    padding-top: 20px;
   }
-  .lignepopulaire {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-    margin-top: 30px;
-    padding-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .lignehebergement {
-    margin-bottom: 0px;
-  }
+
   .petit_articlepopulaire {
+    width: 86%;
     margin-bottom: 20px;
-    width: 310px;
     height: 120px;
   }
   .petit_articlepopulaire img {
@@ -595,14 +590,15 @@ footer ul li a:hover {
     margin-top: 20px;
   }
   #titrepopulaire {
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-left: 10px;
+    width: 86%;
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
   /* ------------------------------------------------- hebergement mobile -------------------------------------- */
 
   .heberge {
-    width: 375px;
+    width: 100%;
     border-radius: 0px;
     background-color: white;
     margin-left: auto;
@@ -615,14 +611,17 @@ footer ul li a:hover {
     padding: 0;
   }
   .heberge h1 {
-    margin-left: 18px;
+    margin-left: 20px;
   }
   .heberge > h2 {
-    margin-left: 33px;
+    width: 86%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
   }
   .petit_article {
-    width: 310px;
-    height: 200px;
+    width: 86%;
+    height: 190px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
@@ -632,7 +631,6 @@ footer ul li a:hover {
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
   }
   .petit_article img {
-    width: 310px;
     height: 110px;
     object-fit: cover;
     display: block;
@@ -642,26 +640,25 @@ footer ul li a:hover {
     border-top-right-radius: 18px;
   }
   /* ------------------------------------------------- activite mobile -------------------------------- */
-  .activite div {
-    display: block;
-    margin-left: 10px;
-  }
+
   .activite_un {
-    width: 320px;
-    height: 195px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    width: 86%;
+    height: 190px;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
   }
   .activite_deux {
-    align-items: center;
-    margin-left: 6px;
+    width: 86%;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
-
   .activite_un img {
-    width: 320px;
+    width: 100%;
     height: 140px;
     object-fit: cover;
     display: block;
@@ -671,35 +668,38 @@ footer ul li a:hover {
     margin-top: 16px;
   }
   .activite h1 {
-    padding-left: 20px;
+    width: 86%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .petitacti {
-    width: 320px;
+    width: 100%;
     margin-bottom: 20px;
   }
   .petitacti img {
-    width: 320px;
+    width: 100%;
   }
   .moyenacti {
-    width: 320px;
+    width: 100%;
     height: 195px;
     margin-bottom: 20px;
   }
   .moyenacti img {
-    width: 320px;
+    width: 100%;
     height: 140px;
   }
   .activite {
-    max-width: 375px;
+    width: 100%;
     margin-top: 40px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
   }
   footer div {
-    display: block;
-    padding-left: 30px;
+    padding: 0;
     padding-top: 10px;
+    display: block;
+    width: 86%;
   }
 
   footer div ul li {
@@ -712,82 +712,87 @@ footer ul li a:hover {
     padding-top: 10px;
   }
   footer {
-    max-width: 2000px;
     padding-bottom: 20px;
   }
 }
 
 @media (min-width: 481px) and (max-width: 1279px) {
-  /* --------  CSS POUR TABLETTES ---------------------*/
+  /* -------------------------------------------------  CSS POUR TABLETTES ---------------------*/
   #menudesktop {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  #menudesktop ul {
-    padding-left: 0px;
-    padding-right: 0px;
+    width: 100%;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
   #menudesktop ul li a {
     padding-left: 15px;
     padding-right: 15px;
   }
-  #recherche {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .populaire {
-    min-width: 375px;
-    padding: 0;
+  #recherche h1 {
     margin: 0;
-    margin-top: 30px;
-    padding: 0 20px 20px 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  .lignepopulaire {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    min-width: 375px;
     padding: 0;
-    margin: 0;
-    margin-top: 0px;
-    padding-bottom: 20px;
+    text-align: center;
+  }
+  #recherche p {
+    text-align: center;
+  }
+  #filtres {
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 20px 0px 20px;
+    justify-content: center;
+  }
+  #ligneinfo {
+    justify-content: center;
+  }
+  #titrepopulaire {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  form {
+    margin: 0;
+    justify-content: center;
+  }
+  #filtres h2 {
+    width: 100%;
+    text-align: center;
+  }
+  .populaire {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+    padding: 4%;
+  }
+  .populaire h1 {
+    margin-bottom: 20px;
+  }
+  .petit_articlepopulaire {
+    width: 90%;
+    margin-bottom: 20px;
   }
   /* ------------------------------------------------- hebergement tablette -------------------------------------- */
-  #hebergementetpopulaire {
-    justify-content: center;
+  #lienhebergement {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .heberge {
     padding: auto;
-    min-width: 375px;
-    max-width: 1279px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  .lignehebergement {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0;
-    padding-left: 80px;
-    padding-right: 80px;
+    width: 100%;
+    justify-content: space-around;
   }
   .heberge h1 {
     margin-left: 10px;
     margin-top: 0px;
     margin-bottom: 20px;
   }
-  .heberge > h2 {
-    margin-left: 33px;
+  .heberge h2:last-child {
+    margin-top: 20px;
+    text-align: center;
   }
   .petit_article {
-    margin: 0 10px 20px 10px;
     width: 300px;
     height: 200px;
     background-color: white;
@@ -806,72 +811,32 @@ footer ul li a:hover {
     border-top-right-radius: 18px;
   }
   /* ------------------------------------------------- activite TABLETTES -------------------------------- */
-  .activite div {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  #recherche h1 {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-  }
 
-  #lienhebergement {
-    text-align: center;
-  }
-  .heberge h2:last-child {
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 10px;
-  }
-  #recherche p {
-    text-align: center;
-  }
-  #ligneactifull div {
-    margin-right: 10px;
-  }
-  #filtres {
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-  }
-  #ligneinfo {
-    justify-content: center;
-  }
-  #titrepopulaire {
-    width: 250px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  form {
-    margin: 0;
-    justify-content: center;
-  }
-  #ligneactifull > div {
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  #ligneactifull > div:last-child .activite_deux {
-    flex-direction: row-reverse;
+  .activite {
+    flex-direction: row;
   }
   .activite_un {
-    width: 270px;
+    width: 100%;
     height: 195px;
     border-radius: 20px;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
-    margin-right: 10px;
-    margin-left: 10px;
   }
   .activite_deux {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: stretch;
+    align-items: stretch;
+  }
+  .activite_deux > div {
+    width: 48%;
+    margin-bottom: 20px;
   }
   .activite_un img {
-    width: 270px;
+    width: 100%;
     height: 140px;
     object-fit: cover;
     display: block;
@@ -881,34 +846,24 @@ footer ul li a:hover {
     margin-top: 16px;
   }
   .activite h1 {
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 20px;
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .petitacti {
-    width: 270px;
-    margin: 0 10px 20px 10px;
+    width: 20%;
   }
   .petitacti img {
-    width: 270px;
+    width: 100%;
   }
   .moyenacti {
-    width: 270px;
+    width: 45%;
     height: 195px;
-    margin: 0 10px 20px 10px;
   }
   .moyenacti img {
-    width: 270px;
+    width: 100%;
     height: 140px;
   }
-  .activite {
-    max-width: 1279;
-    margin-top: 40px;
-    margin-bottom: 30px;
-    justify-content: center;
-  }
-
   footer div {
     padding-top: 10px;
     display: block;
