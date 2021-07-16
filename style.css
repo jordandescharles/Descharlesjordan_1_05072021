@@ -113,7 +113,6 @@ h1 {
 }
 form {
   display: flex;
-  
 }
 h2 {
   font-weight: 800;
@@ -137,6 +136,7 @@ h2 a:hover {
   margin-top: 20px;
   max-width: 70%;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 #filtres .fas {
   background-color: #deebff;
@@ -770,6 +770,10 @@ footer ul li a:hover {
   }
   .petit_articlepopulaire {
     width: 90%;
+    margin-bottom: 20px;
+  }
+  .petit_articlepopulaire img {
+    width: 100%;
     margin-bottom: 20px;
   }
   /* ------------------------------------------------- hebergement tablette -------------------------------------- */
