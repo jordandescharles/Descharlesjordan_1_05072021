@@ -890,4 +890,10 @@ footer ul li a:hover {
     margin-left: auto;
     margin-right: auto;
   }
+  }
+
+@media (max-width: 374px) {
+.petit_articlepopulaire h2{
+  font-size: 0.8em;
+}
 }
