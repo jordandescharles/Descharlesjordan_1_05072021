@@ -12,14 +12,11 @@ strong {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
 }
-html {
-  width: 100%;
-  max-width: 1680px;
-  margin-left: auto;
-  margin-right: auto;
-}
 body {
   padding-top: 30px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 header {
   width: 94%;
@@ -542,7 +539,7 @@ footer ul li a:hover {
     line-height: 50px;
   }
   #filtres h2 {
-    padding-right: 280px;
+    width: 100%;
   }
   #filtres {
     max-width: 96%;
